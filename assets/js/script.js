@@ -193,8 +193,8 @@
       toggleExtendedBtn.setAttribute("aria-expanded", String(showExtended));
       if (toggleExtendedText) {
         toggleExtendedText.textContent = showExtended
-          ? "Show Curated 6 Plates Only"
-          : "Expand Full Issue (Plates 07–14)";
+          ? "Show Featured Selection"
+          : "View Complete Selection (14 Works)";
       }
     }
   }
