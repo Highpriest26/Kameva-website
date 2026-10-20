@@ -1,943 +1,1268 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Kameva - Photography</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kameva Photography — Editorial Luxury &amp; Visual Storytelling | Roselyn Abaa-Offor (Lagos, Nigeria)</title>
+  <meta name="description" content="Kameva Photography by Roselyn Abaa-Offor. Capturing the quiet moments, the raw emotion, and the beauty that lives between frames. Based in Lagos, available worldwide.">
+  <link rel="canonical" href="https://kameva-photography.github.io/portfolio/">
 
-  <!-- Favicons -->
-  <link href="assets/img/camera.png" rel="icon">
-  <link href="assets/img/camera.png" rel="apple-touch-icon">
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kameva Photography — Photography &amp; Visual Storytelling">
+  <meta property="og:description" content="Capturing the quiet moments, the raw emotion, and the beauty that lives between frames. Based in Lagos, available worldwide.">
+  <meta property="og:image" content="https://kameva-photography.github.io/portfolio/assets/img/kama/k-30.jpg">
+  <meta property="og:url" content="https://kameva-photography.github.io/portfolio/">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kameva Photography — Roselyn Abaa-Offor | Lagos, Nigeria">
+  <meta name="twitter:description" content="Editorial portraits, maternity, weddings, fashion, family &amp; event photography based in Lagos, available worldwide.">
+  <meta name="twitter:image" content="https://kameva-photography.github.io/portfolio/assets/img/kama/k-30.jpg">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/camera.png">
+  <link rel="apple-touch-icon" href="assets/img/camera.png">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Google Fonts: Cormorant Garamond & Barlow ONLY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: PhotoFolio
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Isolated Final Concept Stylesheet -->
+  <link rel="stylesheet" href="concept-final/styles.css">
 </head>
+<body id="top">
 
-<body class="index-page">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-camera"></i>
-        <h1 class="sitename">Kameva<span class="name">Photography</span></h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home<br></a></li>
-          <li><a href="about.html">About</a></li>
-               <li><a href="gallery.html">Gallery</a></li>
-
-        
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  <!-- ============================================================
+       SECTION 01: HEADER — Editorial Masthead (Adaptive Light/Dark)
+       ============================================================ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <nav class="header-nav header-nav--left" aria-label="Primary left navigation">
+        <a href="#top" class="nav-link is-active" data-nav-section="top">Home</a>
+        <a href="#portfolio" class="nav-link" data-nav-section="portfolio">Portfolio</a>
+        <a href="#services" class="nav-link" data-nav-section="services">Services</a>
       </nav>
 
+      <a href="#top" class="brand-mark" aria-label="Kameva Photography Home">
+        <span class="brand-mark__primary">KAMEVA</span>
+        <span class="brand-mark__secondary">Photography</span>
+      </a>
 
+      <nav class="header-nav header-nav--right" aria-label="Primary right navigation">
+        <a href="#about" class="nav-link" data-nav-section="about">About</a>
+        <a href="#booking" class="nav-cta">Book a Session</a>
+      </nav>
 
+      <button
+        type="button"
+        class="mobile-menu-toggle"
+        id="mobileMenuToggle"
+        aria-expanded="false"
+        aria-controls="mobileMenuDrawer"
+        aria-label="Open navigation menu"
+      >
+        <span class="mobile-menu-toggle__line"></span>
+        <span class="mobile-menu-toggle__line"></span>
+      </button>
+    </div>
+
+    <!-- Compact Slide-Down Mobile Navigation -->
+    <div class="mobile-drawer" id="mobileMenuDrawer" aria-hidden="true">
+      <div class="mobile-drawer__inner">
+        <p class="mobile-drawer__eyebrow">Lagos, Nigeria · Available Worldwide</p>
+        <nav class="mobile-drawer__nav" aria-label="Mobile navigation">
+          <a href="#top" class="mobile-drawer__link">Home</a>
+          <a href="#stories" class="mobile-drawer__link">Stories</a>
+          <a href="#portfolio" class="mobile-drawer__link">Portfolio</a>
+          <a href="#services" class="mobile-drawer__link">Services</a>
+          <a href="#about" class="mobile-drawer__link">About</a>
+          <a href="#booking" class="mobile-drawer__cta">Book a Session →</a>
+        </nav>
+        <div class="mobile-drawer__meta">
+          <a href="tel:+2348161654981">0816 165 4981</a>
+          <a href="mailto:kamevaphotography@gmail.com">kamevaphotography@gmail.com</a>
+          <a href="https://wa.me/2348161654981" target="_blank" rel="noopener">WhatsApp Concierge ↗</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="main">
+  <main id="main-content">
 
-    <!-- Hero Section -->
-    <!-- <section id="hero" class="hero section" style="background-image: url('assets/img/kama/k-15.PNG'); background-size: cover; background-position: center;background-attachment: fixed;background-repeat: no-repeat;background-color: rgba(0, 0, 0, 0.5); background-blend-mode: multiply;">
+    <!-- ============================================================
+         SECTION 02: HERO — Asymmetric Editorial Spread (#F9F8F6)
+         ============================================================ -->
+    <section class="hero-editorial" data-theme-surface="light" aria-labelledby="hero-title">
+      <div class="hero-editorial__container">
 
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-            <h2><span class=" text-white">Roselyn Abaa-Offor</span></h2>
-            <h2><span class=" text-white">Protraits <small>.</small> Family  <small>.</small> Maternity <small>.</small>Fashion  </span></h2>
-            <p class="text-light">
-            <a href="contact.html" class="btn-get-started">Available for Hire<br></a>
+        <!-- Masthead Banner Row -->
+        <div class="hero-editorial__masthead-row" data-reveal>
+          <div class="hero-editorial__status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Open for bookings · Lagos, Nigeria &amp; Worldwide</span>
           </div>
+          <h1 id="hero-title" class="hero-editorial__title">KAMEVA</h1>
+          <div class="hero-editorial__subtitle-bar">
+            <p class="hero-editorial__subheadline">Photography &amp; Visual Storytelling</p>
+            <p class="hero-editorial__edition">Roselyn Abaa-Offor · Lagos &amp; Worldwide</p>
+          </div>
+        </div>
+
+        <!-- Asymmetric Editorial Grid (Mobile places Intro+CTAs first, Primary 4:5 Portrait immediately in first viewport, Secondary Portrait below) -->
+        <div class="hero-editorial__spread">
+
+          <!-- Intro & CTAs Block -->
+          <div class="hero-editorial__intro-block" data-reveal>
+            <p class="hero-editorial__lead">
+              Capturing the quiet moments, the raw emotion, and the beauty that lives between frames. Based in Lagos, available worldwide.
+            </p>
+
+            <div class="hero-editorial__actions">
+              <a href="#booking" class="btn-editorial btn-editorial--emerald">Book a Session →</a>
+              <a href="#portfolio" class="btn-editorial btn-editorial--ghost">View Portfolio</a>
+            </div>
+
+            <div class="hero-editorial__disciplines" aria-label="Photography categories">
+              <a href="#portfolio" data-filter-jump="portraits">Portraits</a>
+              <span aria-hidden="true">·</span>
+              <a href="#portfolio" data-filter-jump="maternity">Maternity</a>
+              <span aria-hidden="true">·</span>
+              <a href="#portfolio" data-filter-jump="weddings">Weddings</a>
+              <span aria-hidden="true">·</span>
+              <a href="#portfolio" data-filter-jump="fashion">Fashion</a>
+              <span aria-hidden="true">·</span>
+              <a href="#portfolio" data-filter-jump="family">Family</a>
+              <span aria-hidden="true">·</span>
+              <a href="#portfolio" data-filter-jump="events">Events</a>
+            </div>
+          </div>
+
+          <!-- Primary Dominant Portrait (4:5 ratio — k-30.jpg / k-10.jpeg) -->
+          <div class="hero-editorial__primary-col" data-reveal>
+            <figure class="hero-figure hero-figure--primary">
+              <div class="hero-figure__frame hero-figure__frame--4x5">
+                <img
+                  id="heroPrimaryImg"
+                  src="assets/img/kama/k-30.jpg"
+                  alt="High-key editorial beauty close-up by Roselyn Abaa-Offor, Kameva Photography"
+                  width="2400"
+                  height="3000"
+                  fetchpriority="high"
+                >
+              </div>
+              <figcaption class="hero-figure__caption">
+                <span id="heroPrimaryCaption">Fig. 01 — High-Key Editorial Beauty Close-Up (Portraits)</span>
+                <div class="hero-figure__switcher" role="group" aria-label="Switch primary editorial plate">
+                  <button
+                    type="button"
+                    class="look-btn is-active"
+                    data-target-img="heroPrimaryImg"
+                    data-target-caption="heroPrimaryCaption"
+                    data-study-src="assets/img/kama/k-30.jpg"
+                    data-study-alt="High-key editorial beauty close-up by Roselyn Abaa-Offor, Kameva Photography"
+                    data-study-caption="Fig. 01 — High-Key Editorial Beauty Close-Up (Portraits)"
+                  >Plate I</button>
+                  <button
+                    type="button"
+                    class="look-btn"
+                    data-target-img="heroPrimaryImg"
+                    data-target-caption="heroPrimaryCaption"
+                    data-study-src="assets/img/kama/k-10.jpeg"
+                    data-study-alt="Creative glowing-book portrait with white bench and roses"
+                    data-study-caption="Fig. 01 — Glowing-Book Storytelling Portrait (Portraits)"
+                  >Plate II</button>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Supporting Secondary Portrait (2:3 ratio — k-14.jpg / k-28.jpg) -->
+          <div class="hero-editorial__secondary-col" data-reveal>
+            <figure class="hero-figure hero-figure--secondary">
+              <div class="hero-figure__frame hero-figure__frame--2x3">
+                <img
+                  id="heroSecondaryImg"
+                  src="assets/img/kama/k-14.jpg"
+                  alt="Full-length studio fashion portrait in textured black tuxedo suit"
+                  width="2800"
+                  height="4200"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <figcaption class="hero-figure__caption">
+                <span id="heroSecondaryCaption">Fig. 02 — Textured Black Tuxedo Suit (Fashion)</span>
+                <div class="hero-figure__switcher" role="group" aria-label="Switch secondary editorial study">
+                  <button
+                    type="button"
+                    class="look-btn is-active"
+                    data-target-img="heroSecondaryImg"
+                    data-target-caption="heroSecondaryCaption"
+                    data-study-src="assets/img/kama/k-14.jpg"
+                    data-study-alt="Full-length studio fashion portrait in textured black tuxedo suit"
+                    data-study-caption="Fig. 02 — Textured Black Tuxedo Suit (Fashion)"
+                  >Study I</button>
+                  <button
+                    type="button"
+                    class="look-btn"
+                    data-target-img="heroSecondaryImg"
+                    data-target-caption="heroSecondaryCaption"
+                    data-study-src="assets/img/kama/k-28.jpg"
+                    data-study-alt="Studio fashion portrait in textured black tuxedo jacket"
+                    data-study-caption="Fig. 02 — Textured Black Tuxedo Jacket (Fashion)"
+                  >Study II</button>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
         </div>
       </div>
+    </section>
 
-    </section> -->
-    <!-- /Hero Section -->
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Barlow:wght@200;300;400&display=swap');
+    <!-- ============================================================
+         SECTION 03: SELECTED STORIES — Dark Editorial Chapters (#1A1A18)
+         ============================================================ -->
+    <section class="selected-stories" id="stories" data-theme-surface="dark" aria-labelledby="stories-heading">
+      <div class="section-container">
 
-  ul{
-      list-style: none;
-  }
-  #hero.hero {
-    position: relative;
-    min-height: 100vh;
-    background-image: url('assets/img/kama/k-1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: flex-end;
-    overflow: hidden;
-  }
-
-  #hero.hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0,0,0,0.12) 0%,
-      rgba(0,0,0,0.05) 30%,
-      rgba(0,0,0,0.55) 70%,
-      rgba(0,0,0,0.88) 100%
-    );
-    z-index: 1;
-  }
-
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    padding: 0 6vw 7vh;
-  }
-
-  .hero-label {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 200;
-    font-size: 0.7rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color:white;
-    margin-bottom: 1.2rem;
-  }
-
-  .hero-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: clamp(3rem, 8vw, 7rem);
-    color: #fff;
-    line-height: 0.95;
-    margin-bottom: 1.8rem;
-  }
-
-  .hero-divider {
-    width: 48px;
-    height: 1px;
-    background: rgba(255,255,255,0.4);
-    margin-bottom: 1.4rem;
-  }
-
-  .hero-specialties {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem 1.6rem;
-    margin-bottom: 2.6rem;
-  }
-
-  .hero-specialties span {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 300;
-    font-size: 0.78rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.6);
-  }
-
-  .btn-hire {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 300;
-    font-size: 0.75rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    border: 1px solid rgba(255,255,255,0.45);
-    padding: 0.85rem 2rem;
-    transition: all 0.35s ease;
-  }
-
-  .btn-hire:hover {
-    border-color: #fff;
-    background: rgba(255,255,255,0.08);
-    letter-spacing: 0.38em;
-    color: #fff;
-  }
-</style>
-
-<section id="hero" class="hero section"
-  style="background-image: url('assets/img/kama/k-1.jpg');">
-
-  <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
-    <p class="hero-label" style="color:white">Photography &amp; Visual Storytelling</p>
-    <h1 class="hero-name">Kameva<br>Photography</h1>
-    <div class="hero-divider"></div>
-    <div class="hero-specialties">
-      <span>Portraits</span>
-      <span>Family</span>
-      <span>Maternity</span>
-      <span>Fashion</span>
-      <span>Wedding</span>
-      <span>Birthday</span>
-    </div>
-    <a href="contact.html" class="btn-hire">Available for Hire →</a>
-  </div>
-
-</section>
-
-    
-<!-- =============================================
-     DEPENDENCIES — add once to your <head>
-     ============================================= -->
-<!--
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
--->
-
-<!-- ── Gallery Section Styles ── -->
-    <!-- #e07b54 -->
-
-<style>
-  :root {
-    --gallery-accent:     #27a776;
-    --gallery-accent-dim: rgba(224,123,84,0.1);
-    --gallery-text:       #1c1917;
-    --gallery-muted:      rgba(28,25,23,0.42);
-    --gallery-surface:    #ffffff;
-    --gallery-border:     rgba(0,0,0,0.08);
-    --gallery-card-shadow: 0 2px 16px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
-  }
-
-  /* ── Section ── */
-  .gallery-section {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 24px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    color: var(--gallery-text);
-    box-sizing: border-box;
-  }
-
-  .gallery-section *,
-  .gallery-section *::before,
-  .gallery-section *::after { box-sizing: border-box; }
-
-  .gallery-section__header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    padding: 0 4px;
-  }
-
-  .gallery-section__label {
-    font-size: 11px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--gallery-accent);
-    margin-bottom: 8px;
-  }
-
-  .gallery-section__title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 400;
-    line-height: 1;
-    color: var(--gallery-text);
-  }
-
-  .gallery-section__counter {
-    font-size: 13px;
-    color: var(--gallery-muted);
-    letter-spacing: 0.08em;
-  }
-
-  .gallery-section__counter span {
-    color: var(--gallery-accent);
-    font-weight: 500;
-  }
-
-  /* ── Carousel ── */
-  .gallery-carousel {
-    position: relative;
-  }
-
-  .gallery-carousel__outer {
-    overflow: hidden;
-    border-radius: 12px;
-  }
-
-  .gallery-carousel__track {
-    display: flex;
-    gap: 16px;
-    transition: transform 0.65s cubic-bezier(0.77, 0, 0.18, 1);
-    will-change: transform;
-  }
-
-  /* ── Cards ── */
-  .gallery-card {
-    flex: 0 0 calc(33.333% - 11px);
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    aspect-ratio: 3/4;
-    cursor: pointer;
-    background: var(--gallery-surface);
-    box-shadow: var(--gallery-card-shadow);
-  }
-
-  @media (max-width: 900px) {
-    .gallery-card { flex: 0 0 calc(50% - 8px); }
-  }
-  @media (max-width: 560px) {
-    .gallery-card { flex: 0 0 85%; }
-  }
-
-  .gallery-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-
-  .gallery-card__placeholder {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #f0ebe4 0%, #e8ddd3 50%, #f5f0ea 100%);
-    display: none;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .gallery-card__placeholder-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 5rem;
-    font-weight: 400;
-    color: rgba(224,123,84,0.2);
-    user-select: none;
-  }
-
-  .gallery-card__index {
-    position: absolute;
-    top: 16px;
-    left: 18px;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    color: rgba(28,25,23,0.35);
-    font-weight: 400;
-  }
-
-  .gallery-card__overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.2) 45%, transparent 100%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 24px;
-  }
-
-  .gallery-card:hover .gallery-card__overlay { opacity: 1; }
-  .gallery-card:hover img { transform: scale(1.06); }
-
-  .gallery-card__actions {
-    display: flex;
-    gap: 10px;
-  }
-
-  .gallery-card__btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid rgba(0,0,0,0.12);
-    background: rgba(255,255,255,0.85);
-    backdrop-filter: blur(8px);
-    color: var(--gallery-text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.2s, border-color 0.2s, transform 0.2s, color 0.2s;
-  }
-
-  .gallery-card__btn:hover {
-    background: var(--gallery-accent);
-    border-color: var(--gallery-accent);
-    color: #fff;
-    transform: scale(1.08);
-  }
-
-  .gallery-card__btn svg { width: 16px; height: 16px; }
-
-  /* ── Nav ── */
-  .gallery-carousel__nav {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 28px;
-  }
-
-  .gallery-carousel__btn {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: 1px solid var(--gallery-border);
-    background: var(--gallery-surface);
-    color: var(--gallery-text);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-    transition: border-color 0.2s, background 0.2s, transform 0.2s, box-shadow 0.2s;
-  }
-
-  .gallery-carousel__btn:hover:not(:disabled) {
-    border-color: var(--gallery-accent);
-    background: var(--gallery-accent-dim);
-    transform: scale(1.05);
-    box-shadow: 0 2px 12px rgba(224,123,84,0.18);
-  }
-
-  .gallery-carousel__btn:disabled { opacity: 0.3; cursor: default; }
-  .gallery-carousel__btn svg { width: 18px; height: 18px; }
-
-  .gallery-carousel__progress {
-    flex: 1;
-    height: 1px;
-    background: var(--gallery-border);
-    position: relative;
-    overflow: hidden;
-    border-radius: 1px;
-  }
-
-  .gallery-carousel__progress-fill {
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    background: var(--gallery-accent);
-    border-radius: 1px;
-    transition: width 0.65s cubic-bezier(0.77, 0, 0.18, 1);
-  }
-
-  .gallery-carousel__dots {
-    display: flex;
-    gap: 6px;
-  }
-
-  .gallery-carousel__dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--gallery-border);
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    transition: background 0.25s, transform 0.25s;
-  }
-
-  .gallery-carousel__dot.is-active {
-    background: var(--gallery-accent);
-    transform: scale(1.4);
-  }
-
-  /* ── View All ── */
-  .gallery-section__view-all {
-    display: flex;
-    justify-content: center;
-    margin-top: 52px;
-  }
-
-  .gallery-section__btn {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    padding: 16px 44px;
-    border: 1.5px solid var(--gallery-accent);
-    background: transparent;
-    color: var(--gallery-accent);
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 100px;
-    overflow: hidden;
-    transition: color 0.35s;
-  }
-
-  .gallery-section__btn::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--gallery-accent);
-    transform: translateX(-101%);
-    transition: transform 0.4s cubic-bezier(0.77,0,0.18,1);
-    z-index: 0;
-  }
-
-  .gallery-section__btn:hover::before { transform: translateX(0); }
-  .gallery-section__btn:hover { color: #fff; }
-
-  .gallery-section__btn span,
-  .gallery-section__btn svg { position: relative; z-index: 1; }
-
-  .gallery-section__btn svg { width: 16px; height: 16px; transition: transform 0.3s; }
-  .gallery-section__btn:hover svg { transform: translateX(4px); }
-</style>
-
-<!-- ── Gallery Section HTML ── -->
-<section id="gallery" class="gallery section gallery-section">
-
-  <div class="gallery-section__header">
-    <div>
-      <p class="gallery-section__label">Our Work</p>
-      <h2 class="gallery-section__title">Gallery</h2>
-    </div>
-    <p class="gallery-section__counter"><span id="galleryCurrent">1</span> / 8</p>
-  </div>
-
-  <div class="gallery-carousel">
-    <div class="gallery-carousel__outer">
-      <div class="gallery-carousel__track" id="galleryTrack">
-
-        <!-- Card 1 -->
-        <div class="gallery-card">
-          <img src="assets/img/kama/k-3.jpeg" alt="Gallery 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="gallery-card__placeholder"><span class="gallery-card__placeholder-num">01</span></div>
-          <span class="gallery-card__index">01</span>
-          <div class="gallery-card__overlay">
-            <div class="gallery-card__actions">
-              <a href="assets/img/kama/k-3.jpeg" class="gallery-card__btn glightbox preview-link" title="Gallery 1">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 3h6m0 0v6m0-6L14 10M9 21H3m0 0v-6m0 6l7-7"/></svg>
-              </a>
-              <a href="gallery-single.html" class="gallery-card__btn">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </a>
-            </div>
+        <div class="stories-masthead" data-reveal>
+          <div class="stories-masthead__left">
+            <p class="eyebrow eyebrow--emerald">SELECTED STORIES</p>
+            <h2 id="stories-heading" class="section-title section-title--light">Every Frame Holds a Story.</h2>
           </div>
+          <p class="stories-masthead__intro">
+            Portraits of people, milestones and moments, photographed with intention and emotion.
+          </p>
         </div>
 
-        <!-- Card 2 -->
-        <div class="gallery-card">
-          <img src="assets/img/kama/k-4.PNG" alt="Gallery 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="gallery-card__placeholder"><span class="gallery-card__placeholder-num">02</span></div>
-          <span class="gallery-card__index">02</span>
-          <div class="gallery-card__overlay">
-            <div class="gallery-card__actions">
-              <a href="assets/img/kama/k-4.PNG" class="gallery-card__btn glightbox preview-link" title="Gallery 2">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 3h6m0 0v6m0-6L14 10M9 21H3m0 0v-6m0 6l7-7"/></svg>
-              </a>
-              <a href="gallery-single.html" class="gallery-card__btn">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </a>
-            </div>
-          </div>
+        <!-- Story Chapter Navigation Tabs (Editorial Index) -->
+        <div class="stories-chapter-bar" role="tablist" aria-label="Filter visual story chapters" data-reveal>
+          <button type="button" class="chapter-tab is-active" role="tab" aria-selected="true" data-chapter-filter="all">
+            <span>All Chapters</span>
+            <span class="chapter-tab__count">03</span>
+          </button>
+          <button type="button" class="chapter-tab" role="tab" aria-selected="false" data-chapter-filter="story-01">
+            <span>I · Quiet Intimacy</span>
+            <span class="chapter-tab__meta">Portraits</span>
+          </button>
+          <button type="button" class="chapter-tab" role="tab" aria-selected="false" data-chapter-filter="story-02">
+            <span>II · New Life</span>
+            <span class="chapter-tab__meta">Maternity &amp; Family</span>
+          </button>
+          <button type="button" class="chapter-tab" role="tab" aria-selected="false" data-chapter-filter="story-03">
+            <span>III · Celebration &amp; Heritage</span>
+            <span class="chapter-tab__meta">Weddings &amp; Events</span>
+          </button>
         </div>
 
-        <!-- Card 3 -->
-        <div class="gallery-card">
-          <img src="assets/img/kama/k-5.jpeg" alt="Gallery 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="gallery-card__placeholder"><span class="gallery-card__placeholder-num">03</span></div>
-          <span class="gallery-card__index">03</span>
-          <div class="gallery-card__overlay">
-            <div class="gallery-card__actions">
-              <a href="assets/img/kama/k-5.jpeg" class="gallery-card__btn glightbox preview-link" title="Gallery 3">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 3h6m0 0v6m0-6L14 10M9 21H3m0 0v-6m0 6l7-7"/></svg>
-              </a>
-              <a href="gallery-single.html" class="gallery-card__btn">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </a>
+        <!-- STORY 01: Quiet Intimacy (Portraits: k-10.jpeg, k-25.jpeg, k-31.jpeg) -->
+        <article class="story-essay" data-story-id="story-01">
+          <header class="story-essay__header" data-reveal>
+            <div class="story-essay__index">
+              <span class="story-essay__num">Story 01</span>
+              <span class="story-essay__rule" aria-hidden="true"></span>
+              <span class="story-essay__cat">Portraits</span>
             </div>
-          </div>
-        </div>
+            <h3 class="story-essay__title">Quiet Intimacy</h3>
+          </header>
 
-        <!-- Card 4 -->
-        <div class="gallery-card">
-          <img src="assets/img/kama/k-10.jpeg" alt="Gallery 4" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="gallery-card__placeholder"><span class="gallery-card__placeholder-num">04</span></div>
-          <span class="gallery-card__index">04</span>
-          <div class="gallery-card__overlay">
-            <div class="gallery-card__actions">
-              <a href="assets/img/kama/k-10.jpeg" class="gallery-card__btn glightbox preview-link" title="Gallery 4">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 3h6m0 0v6m0-6L14 10M9 21H3m0 0v-6m0 6l7-7"/></svg>
-              </a>
-              <a href="gallery-single.html" class="gallery-card__btn">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </a>
+          <div class="story-essay__triptych">
+            <figure class="story-plate story-plate--primary" data-reveal>
+              <button
+                type="button"
+                class="story-plate__trigger"
+                data-lightbox-src="assets/img/kama/k-10.jpeg"
+                data-lightbox-title="Quiet Intimacy I — Creative Glowing-Book Portrait with White Bench &amp; Roses"
+                data-lightbox-cat="Portraits"
+              >
+                <div class="story-plate__frame story-plate__frame--4x5">
+                  <img
+                    src="assets/img/kama/k-10.jpeg"
+                    alt="Creative glowing-book portrait with white bench and roses"
+                    width="1638"
+                    height="2048"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <figcaption class="story-plate__caption">
+                  <span>01.A — Glowing-Book Portrait with Bench &amp; Roses</span>
+                  <span>Portraits</span>
+                </figcaption>
+              </button>
+            </figure>
+
+            <figure class="story-plate story-plate--offset" data-reveal>
+              <button
+                type="button"
+                class="story-plate__trigger"
+                data-lightbox-src="assets/img/kama/k-25.jpeg"
+                data-lightbox-title="Quiet Intimacy II — Wider Glowing-Book Storytelling Portrait"
+                data-lightbox-cat="Portraits"
+              >
+                <div class="story-plate__frame story-plate__frame--4x5">
+                  <img
+                    src="assets/img/kama/k-25.jpeg"
+                    alt="Wider glowing-book storytelling portrait"
+                    width="1638"
+                    height="2048"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <figcaption class="story-plate__caption">
+                  <span>01.B — Wider Glowing-Book Storytelling Portrait</span>
+                  <span>Portraits</span>
+                </figcaption>
+              </button>
+            </figure>
+
+            <figure class="story-plate" data-reveal>
+              <button
+                type="button"
+                class="story-plate__trigger"
+                data-lightbox-src="assets/img/kama/k-31.jpeg"
+                data-lightbox-title="Quiet Intimacy III — Close-Up Glowing-Book Portrait with Floating Light Particles"
+                data-lightbox-cat="Portraits"
+              >
+                <div class="story-plate__frame story-plate__frame--4x5">
+                  <img
+                    src="assets/img/kama/k-31.jpeg"
+                    alt="Close-up glowing-book portrait with floating light particles"
+                    width="1639"
+                    height="2048"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <figcaption class="story-plate__caption">
+                  <span>01.C — Close-Up Glowing-Book with Light Particles</span>
+                  <span>Portraits</span>
+                </figcaption>
+              </button>
+            </figure>
+          </div>
+        </article>
+
+        <!-- STORY 02: New Life (Maternity & Family: k-5.jpeg, k-21.jpg, k-16.jpg) -->
+        <article class="story-essay" data-story-id="story-02">
+          <header class="story-essay__header" data-reveal>
+            <div class="story-essay__index">
+              <span class="story-essay__num">Story 02</span>
+              <span class="story-essay__rule" aria-hidden="true"></span>
+              <span class="story-essay__cat">Maternity &amp; Family</span>
             </div>
-          </div>
-        </div>
+            <h3 class="story-essay__title">New Life</h3>
+          </header>
 
-        <!-- Card 5 -->
-        <div class="gallery-card">
-          <img src="assets/img/kama/k-16.jpg" alt="Gallery 5" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="gallery-card__placeholder"><span class="gallery-card__placeholder-num">05</span></div>
-          <span class="gallery-card__index">05</span>
-          <div class="gallery-card__overlay">
-            <div class="gallery-card__actions">
-              <a href="assets/img/kama/k-16.jpg" class="gallery-card__btn glightbox preview-link" title="Gallery 5">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 3h6m0 0v6m0-6L14 10M9 21H3m0 0v-6m0 6l7-7"/></svg>
-              </a>
-              <a href="gallery-single.html" class="gallery-card__btn">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </a>
+          <div class="story-essay__triptych">
+            <figure class="story-plate" data-reveal>
+              <button
+                type="button"
+                class="story-plate__trigger"
+                data-lightbox-src="assets/img/kama/k-5.jpeg"
+                data-lightbox-title="New Life I — Overhead Maternity Portrait in Red Fabric"
+                data-lightbox-cat="Maternity"
+              >
+                <div class="story-plate__frame story-plate__frame--4x5">
+                  <img
+                    src="assets/img/kama/k-5.jpeg"
+                    alt="Overhead maternity portrait in red fabric"
+                    width="1638"
+                    height="2048"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <figcaption class="story-plate__caption">
+                  <span>02.A — Overhead Maternity in Red Fabric</span>
+                  <span>Maternity</span>
+                </figcaption>
+              </button>
+            </figure>
+
+            <figure class="story-plate story-plate--primary" data-reveal>
+              <button
+                type="button"
+                class="story-plate__trigger"
+                data-lightbox-src="assets/img/kama/k-21.jpg"
+                data-lightbox-title="New Life II — Full-Length Studio Maternity Portrait in White Dress"
+                data-lightbox-cat="Maternity · Portraits"
+              >
+                <div class="story-plate__frame story-plate__frame--4x5">
+                  <img
+                    src="assets/img/kama/k-21.jpg"
+                    alt="Full-length studio maternity portrait in white dress"
+                    width="4228"
+                    height="5285"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <figcaption class="story-plate__caption">
+                  <span>02.B — Full-Length Maternity in White Dress</span>
+                  <span>Maternity · Portraits</span>
+                </figcaption>
+              </button>
+            </figure>
+
+            <figure class="story-plate story-plate--offset" data-reveal>
+              <button
+                type="button"
+                class="story-plate__trigger"
+                data-lightbox-src="assets/img/kama/k-16.jpg"
+                data-lightbox-title="New Life III — Studio Child Portrait Holding Red Roses"
+                data-lightbox-cat="Family · Portraits"
+              >
+                <div class="story-plate__frame story-plate__frame--4x5">
+                  <img
+                    src="assets/img/kama/k-16.jpg"
+                    alt="Studio child portrait holding red roses"
+                    width="2159"
+                    height="2700"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <figcaption class="story-plate__caption">
+                  <span>02.C — Studio Child Holding Red Roses</span>
+                  <span>Family · Portraits</span>
+                </figcaption>
+              </button>
+            </figure>
+          </div>
+        </article>
+
+        <!-- STORY 03: Celebration & Heritage (Weddings & Events: k-9.jpg, k-20.jpeg, k-26.jpg) -->
+        <article class="story-essay" data-story-id="story-03">
+          <header class="story-essay__header" data-reveal>
+            <div class="story-essay__index">
+              <span class="story-essay__num">Story 03</span>
+              <span class="story-essay__rule" aria-hidden="true"></span>
+              <span class="story-essay__cat">Weddings &amp; Events</span>
             </div>
+            <h3 class="story-essay__title">Celebration &amp; Heritage</h3>
+          </header>
+
+          <div class="story-essay__triptych">
+            <figure class="story-plate story-plate--primary" data-reveal>
+              <button
+                type="button"
+                class="story-plate__trigger"
+                data-lightbox-src="assets/img/kama/k-9.jpg"
+                data-lightbox-title="Celebration &amp; Heritage I — Traditional Nigerian Bridal Portrait"
+                data-lightbox-cat="Weddings · Events"
+              >
+                <div class="story-plate__frame story-plate__frame--2x3">
+                  <img
+                    src="assets/img/kama/k-9.jpg"
+                    alt="Traditional Nigerian bridal portrait"
+                    width="1600"
+                    height="2400"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <figcaption class="story-plate__caption">
+                  <span>03.A — Traditional Nigerian Bridal Portrait</span>
+                  <span>Weddings · Events</span>
+                </figcaption>
+              </button>
+            </figure>
+
+            <figure class="story-plate story-plate--offset" data-reveal>
+              <button
+                type="button"
+                class="story-plate__trigger"
+                data-lightbox-src="assets/img/kama/k-20.jpeg"
+                data-lightbox-title="Celebration &amp; Heritage II — Outdoor Nigerian Traditional-Attire Couple/Family Portrait with Dog"
+                data-lightbox-cat="Family · Weddings"
+              >
+                <div class="story-plate__frame story-plate__frame--4x5">
+                  <img
+                    src="assets/img/kama/k-20.jpeg"
+                    alt="Outdoor Nigerian traditional-attire couple/family portrait with dog"
+                    width="864"
+                    height="1080"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <figcaption class="story-plate__caption">
+                  <span>03.B — Traditional-Attire Couple &amp; Family</span>
+                  <span>Family · Weddings</span>
+                </figcaption>
+              </button>
+            </figure>
+
+            <figure class="story-plate" data-reveal>
+              <button
+                type="button"
+                class="story-plate__trigger"
+                data-lightbox-src="assets/img/kama/k-26.jpg"
+                data-lightbox-title="Celebration &amp; Heritage III — Seated Fifth Birthday Portrait"
+                data-lightbox-cat="Family · Events"
+              >
+                <div class="story-plate__frame story-plate__frame--2x3">
+                  <img
+                    src="assets/img/kama/k-26.jpg"
+                    alt="Seated fifth birthday portrait"
+                    width="1800"
+                    height="2700"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <figcaption class="story-plate__caption">
+                  <span>03.C — Seated Fifth Birthday Portrait</span>
+                  <span>Family · Events</span>
+                </figcaption>
+              </button>
+            </figure>
           </div>
-        </div>
+        </article>
 
-        <!-- Card 6 -->
-        <div class="gallery-card">
-          <img src="assets/img/kama/k-20.jpeg" alt="Gallery 6" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="gallery-card__placeholder"><span class="gallery-card__placeholder-num">06</span></div>
-          <span class="gallery-card__index">06</span>
-          <div class="gallery-card__overlay">
-            <div class="gallery-card__actions">
-              <a href="assets/img/kama/k-20.jpeg" class="gallery-card__btn glightbox preview-link" title="Gallery 6">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 3h6m0 0v6m0-6L14 10M9 21H3m0 0v-6m0 6l7-7"/></svg>
-              </a>
-              <a href="gallery-single.html" class="gallery-card__btn">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 7 -->
-        <div class="gallery-card">
-          <img src="assets/img/kama/k-30.jpg" alt="Gallery 7" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="gallery-card__placeholder"><span class="gallery-card__placeholder-num">07</span></div>
-          <span class="gallery-card__index">07</span>
-          <div class="gallery-card__overlay">
-            <div class="gallery-card__actions">
-              <a href="assets/img/kama/k-30.jpg" class="gallery-card__btn glightbox preview-link" title="Gallery 7">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 3h6m0 0v6m0-6L14 10M9 21H3m0 0v-6m0 6l7-7"/></svg>
-              </a>
-              <a href="gallery-single.html" class="gallery-card__btn">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 8 -->
-        <div class="gallery-card">
-          <img src="assets/img/kama/k-33.PNG" alt="Gallery 8" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="gallery-card__placeholder"><span class="gallery-card__placeholder-num">08</span></div>
-          <span class="gallery-card__index">08</span>
-          <div class="gallery-card__overlay">
-            <div class="gallery-card__actions">
-              <a href="assets/img/kama/k-33.PNG" class="gallery-card__btn glightbox preview-link" title="Gallery 8">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 3h6m0 0v6m0-6L14 10M9 21H3m0 0v-6m0 6l7-7"/></svg>
-              </a>
-              <a href="gallery-single.html" class="gallery-card__btn">
-                <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div><!-- /track -->
-    </div><!-- /outer -->
-
-    <!-- Navigation -->
-    <div class="gallery-carousel__nav">
-      <button class="gallery-carousel__btn" id="galleryPrev" aria-label="Previous">
-        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-      </button>
-
-      <div class="gallery-carousel__progress">
-        <div class="gallery-carousel__progress-fill" id="galleryProgress"></div>
       </div>
+    </section>
 
-      <div class="gallery-carousel__dots" id="galleryDots"></div>
+    <!-- ============================================================
+         SECTION 04: PORTFOLIO — Selected Work Editorial Plates (#F9F8F6)
+         ============================================================ -->
+    <section class="portfolio-editorial" id="portfolio" data-theme-surface="light" aria-labelledby="portfolio-heading">
+      <div class="section-container">
 
-      <button class="gallery-carousel__btn" id="galleryNext" aria-label="Next">
-        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
-      </button>
-    </div>
-  </div><!-- /carousel -->
+        <div class="editorial-section-head" data-reveal>
+          <div>
+            <p class="eyebrow">THE WORK</p>
+            <h2 id="portfolio-heading" class="section-title">Selected Work</h2>
+          </div>
+          <p class="editorial-section-head__note">
+            Every photograph is presented in its native vertical proportion (<code>4:5</code> and <code>2:3</code>) to preserve posture, silhouette, and natural light. Select any plate to inspect at full resolution.
+          </p>
+        </div>
 
-  <!-- View All -->
-  <div class="gallery-section__view-all">
-    <a href="gallery.html" class="gallery-section__btn">
-      <span>View All</span>
-      <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </a>
-  </div>
+        <!-- Simple Instant Category Filter Bar (Emerald Active State) -->
+        <div class="editorial-filter-bar" role="tablist" aria-label="Filter portfolio plates by category" data-reveal>
+          <button type="button" class="editorial-filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All <sup id="count-all">14</sup></button>
+          <button type="button" class="editorial-filter-btn" data-filter="portraits" role="tab" aria-selected="false">Portraits</button>
+          <button type="button" class="editorial-filter-btn" data-filter="maternity" role="tab" aria-selected="false">Maternity</button>
+          <button type="button" class="editorial-filter-btn" data-filter="weddings" role="tab" aria-selected="false">Weddings</button>
+          <button type="button" class="editorial-filter-btn" data-filter="fashion" role="tab" aria-selected="false">Fashion</button>
+          <button type="button" class="editorial-filter-btn" data-filter="family" role="tab" aria-selected="false">Family</button>
+          <button type="button" class="editorial-filter-btn" data-filter="events" role="tab" aria-selected="false">Events</button>
+        </div>
 
-</section><!-- /Gallery Section -->
+        <!-- Asymmetrical Editorial Grid Mixing 4:5 and 2:3 Native Frames -->
+        <div class="editorial-plates" id="editorialPlates">
 
-<!-- ── Gallery Section Script ── -->
-<script>
-  (function () {
-    const track      = document.getElementById('galleryTrack');
-    const cards      = track.querySelectorAll('.gallery-card');
-    const prevBtn    = document.getElementById('galleryPrev');
-    const nextBtn    = document.getElementById('galleryNext');
-    const fill       = document.getElementById('galleryProgress');
-    const dotsWrap   = document.getElementById('galleryDots');
-    const counterEl  = document.getElementById('galleryCurrent');
-    const total      = cards.length;
-    let current = 0;
+          <!-- Plate 01: Oversized Left (Fashion — k-3.jpeg) -->
+          <article class="plate plate--large-left" data-categories="fashion" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-3.jpeg" data-lightbox-title="Plate 01 — Full-Length Studio Fashion Portrait in Patterned Kaftan" data-lightbox-cat="Fashion">
+              <div class="plate__media plate__media--4x5">
+                <img src="assets/img/kama/k-3.jpeg" alt="Full-length studio fashion portrait in dramatic black-and-white patterned kaftan" width="1594" height="2048" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 01</span>
+                <span class="plate__title">Dramatic Patterned Kaftan Study</span>
+                <span class="plate__category">Fashion</span>
+              </div>
+            </button>
+          </article>
 
-    function visibleCount() {
-      return window.innerWidth <= 560 ? 1 : window.innerWidth <= 900 ? 2 : 3;
-    }
+          <!-- Plate 02: Smaller Offset Right (Portraits — k-18.jpeg) -->
+          <article class="plate plate--small-right" data-categories="portraits" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-18.jpeg" data-lightbox-title="Plate 02 — Amber-Lit Studio Portrait Study" data-lightbox-cat="Portraits">
+              <div class="plate__media plate__media--4x5">
+                <img src="assets/img/kama/k-18.jpeg" alt="Warm golden-lit studio portrait of smiling woman" width="1638" height="2048" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 02</span>
+                <span class="plate__title">Amber-Lit Studio Portrait</span>
+                <span class="plate__category">Portraits</span>
+              </div>
+            </button>
+          </article>
 
-    function maxIndex() {
-      return Math.max(0, total - visibleCount());
-    }
+          <!-- Plate 03: Smaller Offset Left (Maternity — k-5.jpeg) -->
+          <article class="plate plate--small-left" data-categories="maternity" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-5.jpeg" data-lightbox-title="Plate 03 — Overhead Maternity Portrait in Red Fabric" data-lightbox-cat="Maternity">
+              <div class="plate__media plate__media--4x5">
+                <img src="assets/img/kama/k-5.jpeg" alt="Overhead maternity portrait in red fabric" width="1638" height="2048" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 03</span>
+                <span class="plate__title">Overhead Maternity in Red Fabric</span>
+                <span class="plate__category">Maternity</span>
+              </div>
+            </button>
+          </article>
 
-    function buildDots() {
-      dotsWrap.innerHTML = '';
-      for (let i = 0; i <= maxIndex(); i++) {
-        const d = document.createElement('button');
-        d.className = 'gallery-carousel__dot' + (i === current ? ' is-active' : '');
-        d.setAttribute('aria-label', 'Slide ' + (i + 1));
-        d.addEventListener('click', () => goTo(i));
-        dotsWrap.appendChild(d);
-      }
-    }
+          <!-- Plate 04: Oversized Right (Fashion — k-28.jpg) -->
+          <article class="plate plate--large-right" data-categories="fashion" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-28.jpg" data-lightbox-title="Plate 04 — Studio Fashion Portrait in Textured Black Tuxedo Jacket" data-lightbox-cat="Fashion">
+              <div class="plate__media plate__media--2x3">
+                <img src="assets/img/kama/k-28.jpg" alt="Studio fashion portrait in textured black tuxedo jacket" width="2467" height="3700" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 04</span>
+                <span class="plate__title">Textured Black Tuxedo Jacket</span>
+                <span class="plate__category">Fashion</span>
+              </div>
+            </button>
+          </article>
 
-    function update() {
-      const cardWidth = cards[0].offsetWidth + 16;
-      track.style.transform = 'translateX(-' + (current * cardWidth) + 'px)';
-      fill.style.width = (maxIndex() === 0 ? 100 : (current / maxIndex()) * 100) + '%';
-      counterEl.textContent = current + 1;
-      dotsWrap.querySelectorAll('.gallery-carousel__dot').forEach((d, i) =>
-        d.classList.toggle('is-active', i === current));
-      prevBtn.disabled = current === 0;
-      nextBtn.disabled = current >= maxIndex();
-    }
+          <!-- Plate 05: Oversized Left (Portraits — k-10.jpeg) -->
+          <article class="plate plate--large-left" data-categories="portraits" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-10.jpeg" data-lightbox-title="Plate 05 — Creative Glowing-Book Portrait with White Bench &amp; Roses" data-lightbox-cat="Portraits">
+              <div class="plate__media plate__media--4x5">
+                <img src="assets/img/kama/k-10.jpeg" alt="Creative glowing-book portrait with white bench and roses" width="1638" height="2048" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 05</span>
+                <span class="plate__title">Glowing-Book Portrait with Bench &amp; Roses</span>
+                <span class="plate__category">Portraits</span>
+              </div>
+            </button>
+          </article>
 
-    function goTo(idx) {
-      current = Math.max(0, Math.min(idx, maxIndex()));
-      update();
-    }
+          <!-- Plate 06: Smaller Offset Right (Weddings & Events — k-9.jpg) -->
+          <article class="plate plate--small-right" data-categories="weddings events" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-9.jpg" data-lightbox-title="Plate 06 — Traditional Nigerian Bridal Portrait" data-lightbox-cat="Weddings · Events">
+              <div class="plate__media plate__media--2x3">
+                <img src="assets/img/kama/k-9.jpg" alt="Traditional Nigerian bridal portrait" width="1600" height="2400" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 06</span>
+                <span class="plate__title">Traditional Nigerian Bridal Portrait</span>
+                <span class="plate__category">Weddings · Events</span>
+              </div>
+            </button>
+          </article>
 
-    prevBtn.addEventListener('click', () => goTo(current - 1));
-    nextBtn.addEventListener('click', () => goTo(current + 1));
+          <!-- Plate 07: Smaller Offset Left (Maternity & Portraits — k-21.jpg) -->
+          <article class="plate plate--small-left plate--extended" data-categories="maternity portraits" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-21.jpg" data-lightbox-title="Plate 07 — Full-Length Studio Maternity Portrait in White Dress" data-lightbox-cat="Maternity · Portraits">
+              <div class="plate__media plate__media--4x5">
+                <img src="assets/img/kama/k-21.jpg" alt="Full-length studio maternity portrait in white dress" width="4228" height="5285" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 07</span>
+                <span class="plate__title">Studio Maternity Portrait in White Dress</span>
+                <span class="plate__category">Maternity · Portraits</span>
+              </div>
+            </button>
+          </article>
 
-    let startX = 0;
-    track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-    track.addEventListener('touchend', e => {
-      const dx = e.changedTouches[0].clientX - startX;
-      if (Math.abs(dx) > 40) goTo(dx < 0 ? current + 1 : current - 1);
-    });
+          <!-- Plate 08: Oversized Right (Fashion — k-27.jpeg) -->
+          <article class="plate plate--large-right plate--extended" data-categories="fashion" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-27.jpeg" data-lightbox-title="Plate 08 — High-Fashion Editorial Portrait in Pink &amp; White" data-lightbox-cat="Fashion">
+              <div class="plate__media plate__media--4x5">
+                <img src="assets/img/kama/k-27.jpeg" alt="High-fashion editorial portrait in pink and white" width="1638" height="2048" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 08</span>
+                <span class="plate__title">High-Fashion Editorial in Pink &amp; White</span>
+                <span class="plate__category">Fashion</span>
+              </div>
+            </button>
+          </article>
 
-    window.addEventListener('resize', () => {
-      current = Math.min(current, maxIndex());
-      buildDots();
-      update();
-    });
+          <!-- Plate 09: Oversized Left (Family & Weddings — k-20.jpeg) -->
+          <article class="plate plate--large-left plate--extended" data-categories="family weddings" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-20.jpeg" data-lightbox-title="Plate 09 — Outdoor Nigerian Traditional-Attire Couple &amp; Family Portrait with Dog" data-lightbox-cat="Family · Weddings">
+              <div class="plate__media plate__media--4x5">
+                <img src="assets/img/kama/k-20.jpeg" alt="Outdoor Nigerian traditional-attire couple/family portrait with dog" width="864" height="1080" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 09</span>
+                <span class="plate__title">Traditional-Attire Couple &amp; Family Portrait</span>
+                <span class="plate__category">Family · Weddings</span>
+              </div>
+            </button>
+          </article>
 
-    buildDots();
-    update();
-  })();
-</script>
+          <!-- Plate 10: Smaller Offset Right (Family & Portraits — k-16.jpg) -->
+          <article class="plate plate--small-right plate--extended" data-categories="family portraits" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-16.jpg" data-lightbox-title="Plate 10 — Studio Child Portrait Holding Red Roses" data-lightbox-cat="Family · Portraits">
+              <div class="plate__media plate__media--4x5">
+                <img src="assets/img/kama/k-16.jpg" alt="Studio child portrait holding red roses" width="2159" height="2700" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 10</span>
+                <span class="plate__title">Studio Child Portrait Holding Red Roses</span>
+                <span class="plate__category">Family · Portraits</span>
+              </div>
+            </button>
+          </article>
 
+          <!-- Plate 11: Smaller Offset Left (Family & Events — k-11.jpg) -->
+          <article class="plate plate--small-left plate--extended" data-categories="family events" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-11.jpg" data-lightbox-title="Plate 11 — Child's Fifth Birthday Portrait in Ankara Gown" data-lightbox-cat="Family · Events">
+              <div class="plate__media plate__media--2x3">
+                <img src="assets/img/kama/k-11.jpg" alt="Child's fifth birthday portrait in Ankara gown" width="1667" height="2500" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 11</span>
+                <span class="plate__title">Child's Fifth Birthday Portrait in Ankara Gown</span>
+                <span class="plate__category">Family · Events</span>
+              </div>
+            </button>
+          </article>
 
+          <!-- Plate 12: Oversized Right (Portraits — k-12.jpg) -->
+          <article class="plate plate--large-right plate--extended" data-categories="portraits" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-12.jpg" data-lightbox-title="Plate 12 — Window Light &amp; Red Frames Portrait" data-lightbox-cat="Portraits">
+              <div class="plate__media plate__media--2x3">
+                <img src="assets/img/kama/k-12.jpg" alt="Portrait of young woman in red glasses by window blinds" width="2000" height="3000" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 12</span>
+                <span class="plate__title">Window Light &amp; Red Frames</span>
+                <span class="plate__category">Portraits</span>
+              </div>
+            </button>
+          </article>
 
+          <!-- Plate 13: Oversized Left (Fashion — k-32.jpg) -->
+          <article class="plate plate--large-left plate--extended" data-categories="fashion" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-32.jpg" data-lightbox-title="Plate 13 — Full-Length Fashion Portrait in Black-and-White Striped Co-Ord" data-lightbox-cat="Fashion">
+              <div class="plate__media plate__media--4x5">
+                <img src="assets/img/kama/k-32.jpg" alt="Full-length fashion portrait in black-and-white striped co-ord" width="2960" height="3700" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 13</span>
+                <span class="plate__title">Black-and-White Striped Co-Ord</span>
+                <span class="plate__category">Fashion</span>
+              </div>
+            </button>
+          </article>
 
+          <!-- Plate 14: Smaller Offset Right (Portraits — k-30.jpg) -->
+          <article class="plate plate--small-right plate--extended" data-categories="portraits" data-reveal>
+            <button type="button" class="plate__trigger" data-lightbox-src="assets/img/kama/k-30.jpg" data-lightbox-title="Plate 14 — High-Key Editorial Beauty Close-Up" data-lightbox-cat="Portraits">
+              <div class="plate__media plate__media--4x5">
+                <img src="assets/img/kama/k-30.jpg" alt="High-key editorial beauty close-up" width="2400" height="3000" loading="lazy" decoding="async">
+              </div>
+              <div class="plate__meta">
+                <span class="plate__number">Plate 14</span>
+                <span class="plate__title">High-Key Editorial Beauty Close-Up</span>
+                <span class="plate__category">Portraits</span>
+              </div>
+            </button>
+          </article>
 
+        </div>
 
-    
-    <!-- /Gallery Section -->
+        <div class="portfolio-editorial__footer" data-reveal>
+          <button type="button" class="btn-editorial btn-editorial--outline" id="toggleExtendedPlates" aria-expanded="false">
+            <span id="toggleExtendedText">Expand Full Issue (Plates 07–14)</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 05: ABOUT — Magazine Profile Treatment (#FAFAFA)
+         ============================================================ -->
+    <section class="about-editorial" id="about" data-theme-surface="light" aria-labelledby="about-heading">
+      <div class="section-container">
+        <div class="about-editorial__grid">
+
+          <!-- Left Column: Large Photographer Portrait (k-19.jpeg) -->
+          <div class="about-editorial__portrait-col" data-reveal>
+            <figure class="about-figure">
+              <div class="about-figure__frame">
+                <img
+                  src="assets/img/kama/k-19.jpeg"
+                  alt="Fine-art black-and-white portrait representing Roselyn Abaa-Offor of Kameva Photography"
+                  width="1638"
+                  height="2048"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <figcaption class="about-figure__caption">
+                <span>Roselyn Abaa-Offor</span>
+                <span>Lagos, Nigeria · Available Worldwide</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Right Column: Editorial Profile, Pull Quote & Biography -->
+          <div class="about-editorial__letter-col" data-reveal>
+            <p class="eyebrow">BEHIND THE LENS</p>
+            <h2 id="about-heading" class="section-title">Roselyn Abaa-Offor</h2>
+
+            <blockquote class="about-editorial__quote">
+              “I believe every person carries a story worth telling. My work is about creating a space where you feel seen — and then freezing that moment in time.”
+            </blockquote>
+
+            <div class="about-editorial__bio-preview">
+              <p>
+                Roselyn Abaa-Offor is a passionate photographer and visual storyteller based in <strong>Lagos, Nigeria</strong> and <strong>available worldwide</strong>, dedicated to capturing moments with depth, emotion, and authenticity. Her work is rooted in the belief that every image should tell a story—one that feels real, timeless, and deeply human.
+              </p>
+              <p>
+                With a strong background in leadership and organization, Roselyn brings a unique blend of structure and creativity to her photography, approaching every shoot with intention, lighting, and refined composition.
+              </p>
+            </div>
+
+            <div class="about-editorial__bio-more" id="aboutBioMore" hidden>
+              <p>
+                Whether documenting intimate portraits, dynamic events, or lifestyle moments, Roselyn is known for creating a comfortable space that allows her subjects to be themselves—resulting in natural, powerful imagery that resonates.
+              </p>
+              <p>
+                Driven by a desire to continuously evolve, she is committed to refining her craft and delivering work that not only meets expectations but leaves a lasting impression.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              class="read-more-link"
+              id="aboutReadMoreBtn"
+              aria-expanded="false"
+              aria-controls="aboutBioMore"
+            >
+              Read My Story →
+            </button>
+
+            <dl class="about-editorial__credentials">
+              <div>
+                <dt>Photographer</dt>
+                <dd>Roselyn Abaa-Offor</dd>
+              </div>
+              <div>
+                <dt>Location &amp; Reach</dt>
+                <dd>Lagos, Nigeria · Available Worldwide</dd>
+              </div>
+              <div>
+                <dt>Disciplines</dt>
+                <dd>Portraits · Maternity · Weddings · Fashion · Family · Events</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd class="is-emerald">Open for Bookings</dd>
+              </div>
+            </dl>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 06: SERVICES — Numbered Editorial Index (#F9F8F6)
+         ============================================================ -->
+    <section class="services-editorial" id="services" data-theme-surface="light" aria-labelledby="services-heading">
+      <div class="section-container">
+
+        <div class="editorial-section-head" data-reveal>
+          <div>
+            <p class="eyebrow">SESSIONS</p>
+            <h2 id="services-heading" class="section-title">How We Can Create Together</h2>
+          </div>
+          <p class="editorial-section-head__note">
+            Every commission is tailored around your story. Hover or focus any session on desktop—or tap on mobile—to preview representative work from the archive.
+          </p>
+        </div>
+
+        <div class="services-editorial__layout">
+
+          <!-- Left/Main: 6 Numbered Editorial Service Rows -->
+          <div class="services-index" role="list">
+
+            <!-- 01 Portrait Sessions -->
+            <div class="service-row is-active" role="listitem" data-service-img="assets/img/kama/k-2.jpg" data-service-caption="01 — Portrait Sessions · Studio Portrait &amp; Character Study" data-service-pill="Portrait">
+              <button type="button" class="service-row__header" aria-expanded="true">
+                <span class="service-row__num">01</span>
+                <span class="service-row__title">Portrait Sessions</span>
+                <span class="service-row__desc">Individual and headshot sessions that reveal the depth and character behind every face.</span>
+                <span class="service-row__indicator" aria-hidden="true">↗</span>
+              </button>
+              <div class="service-row__drawer">
+                <div class="service-row__mobile-img">
+                  <img src="assets/img/kama/k-2.jpg" alt="Studio portrait of woman in black tee and patterned silk headscarf" width="2470" height="3700" loading="lazy" decoding="async">
+                </div>
+                <a href="#booking" class="service-row__book" data-book-pill="Portrait">Book Portrait Session →</a>
+              </div>
+            </div>
+
+            <!-- 02 Maternity & Newborn -->
+            <div class="service-row" role="listitem" data-service-img="assets/img/kama/k-21.jpg" data-service-caption="02 — Maternity &amp; Newborn · Full-Length Studio Maternity Portrait" data-service-pill="Maternity">
+              <button type="button" class="service-row__header" aria-expanded="false">
+                <span class="service-row__num">02</span>
+                <span class="service-row__title">Maternity &amp; Newborn</span>
+                <span class="service-row__desc">Tender, timeless images honouring the beauty of pregnancy and the miracle of new life.</span>
+                <span class="service-row__indicator" aria-hidden="true">↗</span>
+              </button>
+              <div class="service-row__drawer" hidden>
+                <div class="service-row__mobile-img">
+                  <img src="assets/img/kama/k-21.jpg" alt="Full-length studio maternity portrait in white dress" width="4228" height="5285" loading="lazy" decoding="async">
+                </div>
+                <a href="#booking" class="service-row__book" data-book-pill="Maternity">Book Maternity Session →</a>
+              </div>
+            </div>
+
+            <!-- 03 Weddings & Events -->
+            <div class="service-row" role="listitem" data-service-img="assets/img/kama/k-9.jpg" data-service-caption="03 — Weddings &amp; Events · Traditional Nigerian Bridal Portrait" data-service-pill="Wedding">
+              <button type="button" class="service-row__header" aria-expanded="false">
+                <span class="service-row__num">03</span>
+                <span class="service-row__title">Weddings &amp; Events</span>
+                <span class="service-row__desc">Intentional visual storytelling for weddings, birthdays, celebrations and meaningful occasions.</span>
+                <span class="service-row__indicator" aria-hidden="true">↗</span>
+              </button>
+              <div class="service-row__drawer" hidden>
+                <div class="service-row__mobile-img">
+                  <img src="assets/img/kama/k-9.jpg" alt="Traditional Nigerian bridal portrait" width="1600" height="2400" loading="lazy" decoding="async">
+                </div>
+                <a href="#booking" class="service-row__book" data-book-pill="Wedding">Book Wedding / Event →</a>
+              </div>
+            </div>
+
+            <!-- 04 Fashion & Editorial -->
+            <div class="service-row" role="listitem" data-service-img="assets/img/kama/k-27.jpeg" data-service-caption="04 — Fashion &amp; Editorial · High-Fashion Editorial in Pink &amp; White" data-service-pill="Fashion">
+              <button type="button" class="service-row__header" aria-expanded="false">
+                <span class="service-row__num">04</span>
+                <span class="service-row__title">Fashion &amp; Editorial</span>
+                <span class="service-row__desc">Bold, styled editorial work for brands and designers who want imagery that stops the scroll.</span>
+                <span class="service-row__indicator" aria-hidden="true">↗</span>
+              </button>
+              <div class="service-row__drawer" hidden>
+                <div class="service-row__mobile-img">
+                  <img src="assets/img/kama/k-27.jpeg" alt="High-fashion editorial portrait in pink and white" width="1638" height="2048" loading="lazy" decoding="async">
+                </div>
+                <a href="#booking" class="service-row__book" data-book-pill="Fashion">Book Fashion Session →</a>
+              </div>
+            </div>
+
+            <!-- 05 Family Photography -->
+            <div class="service-row" role="listitem" data-service-img="assets/img/kama/k-16.jpg" data-service-caption="05 — Family Photography · Studio Child Portrait Holding Red Roses" data-service-pill="Family">
+              <button type="button" class="service-row__header" aria-expanded="false">
+                <span class="service-row__num">05</span>
+                <span class="service-row__title">Family Photography</span>
+                <span class="service-row__desc">Candid, warm family sessions that preserve the bonds, laughter, and love between you.</span>
+                <span class="service-row__indicator" aria-hidden="true">↗</span>
+              </button>
+              <div class="service-row__drawer" hidden>
+                <div class="service-row__mobile-img">
+                  <img src="assets/img/kama/k-16.jpg" alt="Studio child portrait holding red roses" width="2159" height="2700" loading="lazy" decoding="async">
+                </div>
+                <a href="#booking" class="service-row__book" data-book-pill="Family">Book Family Session →</a>
+              </div>
+            </div>
+
+            <!-- 06 Videography -->
+            <div class="service-row" role="listitem" data-service-img="assets/img/kama/k-13.jpeg" data-service-caption="06 — Videography · Golden Rim-Lit Low-Key Portrait Study" data-service-pill="Videography">
+              <button type="button" class="service-row__header" aria-expanded="false">
+                <span class="service-row__num">06</span>
+                <span class="service-row__title">Videography</span>
+                <span class="service-row__desc">Cinematic video production that captures moments, tells stories, and brings your vision to life.</span>
+                <span class="service-row__indicator" aria-hidden="true">↗</span>
+              </button>
+              <div class="service-row__drawer" hidden>
+                <div class="service-row__mobile-img">
+                  <img src="assets/img/kama/k-13.jpeg" alt="Golden rim-lit low-key portrait holding yellow flowers" width="958" height="960" loading="lazy" decoding="async">
+                </div>
+                <a href="#booking" class="service-row__book" data-book-pill="Videography">Book Videography →</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Sticky Preview Frame (Desktop) -->
+          <aside class="services-preview" aria-label="Selected service visual preview">
+            <div class="services-preview__card">
+              <div class="services-preview__frame">
+                <img
+                  id="servicePreviewImg"
+                  src="assets/img/kama/k-2.jpg"
+                  alt="Representative photograph for selected Kameva Photography service"
+                  width="2470"
+                  height="3700"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <p class="services-preview__caption" id="servicePreviewCaption">
+                01 — Portrait Sessions · Studio Portrait &amp; Character Study
+              </p>
+              <a href="#booking" class="services-preview__cta" id="servicePreviewCta" data-book-pill="Portrait">
+                Commission This Session →
+              </a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 07: PHILOSOPHY BREAK — Cinematic Visual Pause (#1A1A18)
+         ============================================================ -->
+    <section class="philosophy-break" id="philosophy" data-theme-surface="dark" aria-label="Artist Philosophy">
+      <div class="section-container">
+        <div class="philosophy-break__grid">
+
+          <!-- One Strong Photograph (k-13.jpeg with optional study toggle to k-29.jpeg) -->
+          <div class="philosophy-break__media" data-reveal>
+            <figure class="philosophy-figure">
+              <div class="philosophy-figure__frame">
+                <img
+                  id="philosophyImg"
+                  src="assets/img/kama/k-13.jpeg"
+                  alt="Golden rim-lit low-key portrait holding yellow flowers"
+                  width="958"
+                  height="960"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <figcaption class="philosophy-figure__caption">
+                <span id="philosophyCaption">Golden Rim-Lit Low-Key Portrait Study · Lagos</span>
+                <div class="philosophy-figure__switcher" role="group" aria-label="Select philosophy portrait study">
+                  <button
+                    type="button"
+                    class="look-btn look-btn--dark is-active"
+                    data-target-img="philosophyImg"
+                    data-target-caption="philosophyCaption"
+                    data-study-src="assets/img/kama/k-13.jpeg"
+                    data-study-alt="Golden rim-lit low-key portrait holding yellow flowers"
+                    data-study-caption="Golden Rim-Lit Low-Key Portrait Study · Lagos"
+                  >Study I</button>
+                  <button
+                    type="button"
+                    class="look-btn look-btn--dark"
+                    data-target-img="philosophyImg"
+                    data-target-caption="philosophyCaption"
+                    data-study-src="assets/img/kama/k-29.jpeg"
+                    data-study-alt="Warm low-key studio portrait in Ankara top"
+                    data-study-caption="Warm Low-Key Studio Portrait in Ankara · Lagos"
+                  >Study II</button>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Large Editorial Quote & Minimal Supporting Copy -->
+          <div class="philosophy-break__copy" data-reveal>
+            <p class="eyebrow eyebrow--emerald">ARTIST PHILOSOPHY</p>
+            <blockquote class="philosophy-break__quote">
+              “Every person carries a story worth telling.”
+            </blockquote>
+            <p class="philosophy-break__supporting">
+              More than photographs — honest moments preserved with intention, emotion and artistry.
+            </p>
+            <div class="philosophy-break__rule" aria-hidden="true"></div>
+            <p class="philosophy-break__signature">Roselyn Abaa-Offor · Kameva Photography</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 08: BOOKING — Editorial Session Inquiry (#F9F8F6)
+         ============================================================ -->
+    <section class="booking-editorial" id="booking" data-theme-surface="light" aria-labelledby="booking-heading">
+      <div class="section-container">
+        <div class="booking-editorial__grid">
+
+          <!-- Left Column: Eyebrow, Headline, Intro & Alternate Actions -->
+          <div class="booking-editorial__intro" data-reveal>
+            <p class="eyebrow">BOOK A SESSION</p>
+            <h2 id="booking-heading" class="booking-editorial__headline">
+              Let’s Create Something Worth Remembering.
+            </h2>
+            <p class="booking-editorial__sub">
+              Tell me what you're planning and let's create photographs that feel honest, beautiful and entirely yours.
+            </p>
+
+            <div class="booking-editorial__channels">
+              <a href="https://wa.me/2348161654981" target="_blank" rel="noopener" class="channel-card channel-card--emerald">
+                <span class="channel-card__label">Instant Concierge</span>
+                <span class="channel-card__value">Continue on WhatsApp · 0816 165 4981 ↗</span>
+              </a>
+              <a href="mailto:kamevaphotography@gmail.com" class="channel-card">
+                <span class="channel-card__label">Direct Electronic Mail</span>
+                <span class="channel-card__value">Send an Email · kamevaphotography@gmail.com ↗</span>
+              </a>
+              <a href="tel:+2348161654981" class="channel-card">
+                <span class="channel-card__label">Telephone · Lagos, Nigeria</span>
+                <span class="channel-card__value">0816 165 4981</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Editorial Booking Form with Session Type Pills -->
+          <div class="booking-editorial__form-wrap" data-reveal>
+            <form id="editorialBookingForm" class="editorial-form">
+
+              <!-- Functional Session Pill Selector (Concept C influence in Concept A luxury aesthetic) -->
+              <div class="editorial-form__pills-wrap">
+                <span class="editorial-form__label">Session Type</span>
+                <div class="session-pills" role="radiogroup" aria-label="Choose session type">
+                  <button type="button" class="session-pill is-selected" role="radio" aria-checked="true" data-session-pill="Portrait">Portrait</button>
+                  <button type="button" class="session-pill" role="radio" aria-checked="false" data-session-pill="Maternity">Maternity</button>
+                  <button type="button" class="session-pill" role="radio" aria-checked="false" data-session-pill="Wedding">Wedding</button>
+                  <button type="button" class="session-pill" role="radio" aria-checked="false" data-session-pill="Fashion">Fashion</button>
+                  <button type="button" class="session-pill" role="radio" aria-checked="false" data-session-pill="Family">Family</button>
+                  <button type="button" class="session-pill" role="radio" aria-checked="false" data-session-pill="Event">Event</button>
+                  <button type="button" class="session-pill" role="radio" aria-checked="false" data-session-pill="Videography">Videography</button>
+                </div>
+              </div>
+
+              <div class="editorial-form__row">
+                <div class="editorial-form__field">
+                  <label for="ed-name">Name</label>
+                  <input type="text" id="ed-name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="editorial-form__field">
+                  <label for="ed-email">Email</label>
+                  <input type="email" id="ed-email" name="email" placeholder="hello@example.com" required>
+                </div>
+              </div>
+
+              <div class="editorial-form__row">
+                <div class="editorial-form__field">
+                  <label for="ed-phone">Phone</label>
+                  <input type="tel" id="ed-phone" name="phone" placeholder="0816 165 4981">
+                </div>
+                <div class="editorial-form__field">
+                  <label for="ed-service">Session Type</label>
+                  <select id="ed-service" name="subject" required>
+                    <option value="Portrait">Portrait</option>
+                    <option value="Maternity">Maternity</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Family">Family</option>
+                    <option value="Event">Event</option>
+                    <option value="Videography">Videography</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="editorial-form__row">
+                <div class="editorial-form__field">
+                  <label for="ed-date">Preferred Date</label>
+                  <input type="text" id="ed-date" name="preferred_date" placeholder="e.g. November 18, 2026">
+                </div>
+                <div class="editorial-form__field">
+                  <label for="ed-location">Location</label>
+                  <input type="text" id="ed-location" name="location" placeholder="Lagos Studio / On-Location / Travel">
+                </div>
+              </div>
+
+              <div class="editorial-form__field">
+                <label for="ed-message">Tell me about your session</label>
+                <textarea id="ed-message" name="message" rows="4" placeholder="Share your vision, mood, wardrobe ideas, or desired dates..." required></textarea>
+              </div>
+
+              <div class="editorial-form__actions">
+                <button type="submit" class="btn-editorial btn-editorial--emerald" id="edSubmitBtn">
+                  Book a Session →
+                </button>
+                <div class="editorial-form__alt-links">
+                  <a href="https://wa.me/2348161654981" target="_blank" rel="noopener" class="editorial-form__wa-link" id="edWhatsappQuick">
+                    Continue on WhatsApp ↗
+                  </a>
+                  <a href="mailto:kamevaphotography@gmail.com" class="editorial-form__email-link">
+                    Send an Email ↗
+                  </a>
+                </div>
+              </div>
+
+              <p class="editorial-form__status" id="edFormStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  
-<style>
+  <!-- ============================================================
+       SECTION 09: FOOTER — Editorial Colophon (#1A1A18)
+       ============================================================ -->
+  <footer class="site-footer" data-theme-surface="dark">
+    <div class="section-container">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <a href="#top" class="footer-wordmark">
+            <span class="footer-wordmark__primary">KAMEVA</span>
+            <span class="footer-wordmark__secondary">Photography</span>
+          </a>
+          <p class="site-footer__tagline">
+            Capturing the quiet moments, the raw emotion, and the beauty that lives between frames.
+          </p>
+          <p class="site-footer__status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Lagos, Nigeria · Available worldwide</span>
+          </p>
+        </div>
 
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <span class="site-footer__col-title">Navigation</span>
+          <a href="#top">Home</a>
+          <a href="#stories">Selected Stories</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#booking">Book a Session</a>
+        </nav>
 
-  :root {
-    --accent: #27a776;
-    --accent-border: rgba(39, 167, 118, 0.3);
-  }
+        <div class="site-footer__contact">
+          <span class="site-footer__col-title">Direct Contact</span>
+          <a href="tel:+2348161654981">0816 165 4981</a>
+          <a href="mailto:kamevaphotography@gmail.com">kamevaphotography@gmail.com</a>
+          <a href="https://wa.me/2348161654981" target="_blank" rel="noopener">WhatsApp Concierge ↗</a>
+        </div>
+      </div>
 
-  .footer {
-    background: #1a1a18;
-    padding: 3.5rem 2rem 2rem;
-    position: relative;
-    overflow: hidden;
-  }
-  .footer::before {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(39,167,118,0.3), transparent);
-  }
-
-  .footer-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .footer-brand .name {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 1.6rem;
-    color: #fff;
-    display: block;
-    margin-bottom: 0.3rem;
-  }
-  .footer-brand .tagline {
-    font-size: 0.65rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-   color: #fff;    font-weight: 300;
-    font-family: 'Barlow', sans-serif;
-  }
-
-  .footer-divider {
-    width: 1px;
-    height: 60px;
-    background: rgba(255,255,255,0.1);
-  }
-
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.5rem;
-  }
-  .footer-links a {
-    font-family: 'Barlow', sans-serif;
-    font-size: 0.7rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-   color: #fff;    text-decoration: none;
-    font-weight: 300;
-    transition: color 0.25s;
-  }
-  .footer-links a:hover { color: var(--accent); }
-
-  .footer-bottom {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.06);
-  }
-
-  .footer-copy {
-    font-size: 0.7rem;
-   color: #fff;
-       font-weight: 300;
-    font-family: 'Barlow', sans-serif;
-  }
-  .footer-copy a { color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.2s; }
-  .footer-copy a:hover { color: var(--accent); }
-
-  .footer .social-links { display: flex; gap: 0.6rem; }
-  .footer .social-links a {
-    width: 34px; height: 34px;
-    border: 1px solid rgba(255,255,255,0.12);
-    display: flex; align-items: center; justify-content: center;
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.25s;
-    font-size: 0.9rem;
-  }
-  .footer .social-links a:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  @media (max-width: 600px) {
-    .footer-inner { grid-template-columns: 1fr; text-align: center; }
-    .footer-divider { display: none; }
-    .footer-links { align-items: center; flex-direction: row; flex-wrap: wrap; justify-content: center; }
-    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
-  }
-</style>
-
-<footer id="footer" class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <span class="name">Kameva photography</span>
-      <span class="tagline">Portrait · Maternity · Fashion · Family</span>
+      <div class="site-footer__bottom">
+        <p>© 2025 Roselyn Abaa-Offor · Kameva Photography. All rights reserved.</p>
+        <p>Portraits · Maternity · Weddings · Fashion · Family · Events</p>
+      </div>
     </div>
-    <div class="footer-divider"></div>
-    <nav class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+  </footer>
 
-  <div class="footer-bottom">
-    <p class="footer-copy">
-      © 2025 Roselyn Abaa-Offor. All rights reserved.
-      Designed by <a href="#">Kameva</a>.
-    </p>
-    <div class="social-links">
-      <a href="" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <!-- ============================================================
+       LIGHTBOX MODAL — Full-Resolution Plate Inspection
+       ============================================================ -->
+  <div class="lightbox" id="editorialLightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lightbox__backdrop" data-lightbox-close></div>
+    <div class="lightbox__content">
+      <button type="button" class="lightbox__close" data-lightbox-close aria-label="Close full-resolution view">
+        Close ×
+      </button>
+      <figure class="lightbox__figure">
+        <img id="lightboxImg" src="" alt="">
+        <figcaption class="lightbox__caption">
+          <span id="lightboxCat" class="lightbox__cat"></span>
+          <span id="lightboxTitle" class="lightbox__title"></span>
+        </figcaption>
+      </figure>
     </div>
   </div>
-</footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- ============================================================
+       DEVELOPMENT CONCEPT SWITCHER (Bottom-Right Floating Pill)
+       ============================================================ -->
+  <aside class="concept-switcher" aria-label="Prototype Concept Switcher">
+    <a href="original-index.html" class="concept-switcher__link" title="View Original Site">Original</a>
+    <a href="concept-a/" class="concept-switcher__link" title="Concept A: Editorial Luxury">A</a>
+    <a href="concept-b/" class="concept-switcher__link" title="Concept B: Cinematic Storyteller">B</a>
+    <a href="concept-c/" class="concept-switcher__link" title="Concept C: Modern Creative Studio">C</a>
+    <a href="./" class="concept-switcher__link is-current" aria-current="page" title="Final Refined Direction">Final</a>
+  </aside>
 
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="line"></div>
-  </div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <!-- EmailJS SDK (matches production credentials) -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+  <script src="concept-final/script.js" defer></script>
 </body>
-
 </html>
