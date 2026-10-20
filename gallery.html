@@ -31,7 +31,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 
   <!-- Shared Production Stylesheet -->
-  <link rel="stylesheet" href="assets/css/kameva.css">
+  <link rel="stylesheet" href="assets/css/kameva.css?v=5">
+  <style>.mobile-floating-nav{display:none}</style>
 </head>
 <body id="top">
 
@@ -593,31 +594,16 @@
         <p>Designed by <a href="https://www.boffinstechnology.com.ng" target="_blank" rel="noopener" class="site-footer__credit-link">www.boffinstechnology.com.ng</a></p>
       </div>
     </div>
-
-    <!-- Floating Mobile Footer Navigation Bar -->
-    <nav class="mobile-floating-nav" aria-label="Mobile floating navigation">
-      <a href="index.html" class="mobile-floating-nav__link">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5.5v-6h-5v6H4a1 1 0 0 1-1-1v-9.5z"/></svg>
-        <span>Home</span>
-      </a>
-      <a href="gallery.html" class="mobile-floating-nav__link is-active" aria-current="page">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-        <span>Portfolio</span>
-      </a>
-      <a href="services.html" class="mobile-floating-nav__link">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <span>Services</span>
-      </a>
-      <a href="about.html" class="mobile-floating-nav__link">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        <span>About</span>
-      </a>
-      <a href="contact.html" class="mobile-floating-nav__link mobile-floating-nav__link--cta">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        <span>Book</span>
-      </a>
-    </nav>
   </footer>
+
+  <!-- Fixed Bottom Mobile Navigation Bar -->
+  <nav class="mobile-floating-nav" aria-label="Mobile bottom navigation">
+    <a href="index.html" class="mobile-floating-nav__link">Home</a>
+    <a href="gallery.html" class="mobile-floating-nav__link is-active" aria-current="page">Portfolio</a>
+    <a href="services.html" class="mobile-floating-nav__link">Services</a>
+    <a href="about.html" class="mobile-floating-nav__link">About</a>
+    <a href="contact.html" class="mobile-floating-nav__link mobile-floating-nav__link--cta">Book</a>
+  </nav>
 
   <!-- ============================================================
        LIGHTBOX MODAL — Full-Resolution Plate Inspection
@@ -638,6 +624,6 @@
     </div>
   </div>
 
-  <script src="assets/js/kameva.js" defer></script>
+  <script src="assets/js/kameva.js?v=4" defer></script>
 </body>
 </html>

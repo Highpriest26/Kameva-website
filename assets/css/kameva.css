@@ -2350,8 +2350,8 @@ textarea {
 }
 
 /* ==============================================================
-   MOBILE FLOATING FOOTER NAVIGATION DOCK
-   Removes top mobile menu button and places a floating menu in footer
+   MOBILE FLOATING BOTTOM NAVIGATION BAR
+   Removes top mobile menu button and places floating bottom nav on mobile
    ============================================================== */
 .mobile-floating-nav {
   display: none;
@@ -2363,97 +2363,65 @@ textarea {
     display: none !important;
   }
 
-  .header-inner {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .brand-mark {
-    align-items: center;
-    text-align: center;
-  }
-
   .site-footer {
-    padding-bottom: 6rem;
+    padding-bottom: 5.5rem;
   }
 
   .mobile-floating-nav {
     position: fixed;
     left: 50%;
-    bottom: 0.85rem;
+    bottom: 1rem;
     transform: translateX(-50%);
-    z-index: 1200;
+    z-index: 9500;
     width: calc(100% - 1.5rem);
-    max-width: 440px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    max-width: 400px;
+    display: flex !important;
     align-items: center;
-    gap: 0.25rem;
-    padding: 0.4rem;
+    justify-content: space-between;
+    gap: 0.2rem;
+    padding: 0.35rem;
     background: rgba(26, 26, 24, 0.94);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(249, 248, 246, 0.16);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: 0.75rem;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.32);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
   }
 
   .mobile-floating-nav__link {
-    display: flex;
-    flex-direction: column;
+    flex: 1 1 auto;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.2rem;
-    min-height: 46px;
-    padding: 0.35rem 0.2rem;
+    min-height: 38px;
+    padding: 0.4rem 0.5rem;
     border-radius: 0.5rem;
-    font-size: 0.58rem;
+    font-family: var(--font-body);
+    font-size: 0.64rem;
     font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(249, 248, 246, 0.74);
+    color: rgba(249, 248, 246, 0.78);
     text-align: center;
-    transition: background-color 0.25s ease, color 0.25s ease;
-  }
-
-  .mobile-floating-nav__link svg {
-    width: 17px;
-    height: 17px;
-    stroke: currentColor;
-    stroke-width: 1.6;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
-    flex-shrink: 0;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
 
   .mobile-floating-nav__link:hover,
   .mobile-floating-nav__link.is-active {
     color: var(--pure-white);
-    background: rgba(39, 167, 118, 0.22);
-  }
-
-  .mobile-floating-nav__link.is-active svg {
-    stroke: var(--emerald);
+    background: rgba(255, 255, 255, 0.12);
   }
 
   .mobile-floating-nav__link--cta {
     background: var(--emerald);
-    color: var(--pure-white);
+    color: var(--pure-white) !important;
     font-weight: 500;
-  }
-
-  .mobile-floating-nav__link--cta svg {
-    stroke: var(--pure-white);
   }
 
   .mobile-floating-nav__link--cta:hover,
   .mobile-floating-nav__link--cta.is-active {
     background: var(--emerald-hover);
-    color: var(--pure-white);
-  }
-
-  .mobile-floating-nav__link--cta.is-active svg {
-    stroke: var(--pure-white);
+    color: var(--pure-white) !important;
   }
 }
