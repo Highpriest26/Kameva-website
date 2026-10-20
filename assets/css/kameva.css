@@ -2274,6 +2274,69 @@ textarea {
   border-color: #c94a38;
 }
 
+/* Footer Credit Link */
+.site-footer__credit-link {
+  color: var(--emerald);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.25s ease;
+}
+
+.site-footer__credit-link:hover {
+  color: var(--pure-white);
+}
+
+/* ==============================================================
+   TAILWIND-STYLE ROUNDED CORNERS ON ALL BOXES, FRAMES & CONTROLS
+   - Cards, frames, containers: border-radius: 0.75rem (rounded-xl)
+   - Buttons, inputs, pills, tabs: border-radius: 0.5rem (rounded-lg)
+   ============================================================== */
+.hero-figure__frame,
+.story-plate__frame,
+.plate__media,
+.about-figure__frame,
+.philosophy-figure__frame,
+.services-preview__card,
+.service-card,
+.service-row__mobile-img,
+.channel-card,
+.editorial-form,
+.lightbox__figure img {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.services-preview__frame {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.service-row.is-active {
+  border-radius: 0.75rem;
+}
+
+.about-editorial__credentials {
+  border: 1px solid var(--sand-border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.nav-cta,
+.mobile-menu-toggle,
+.mobile-drawer__cta,
+.btn-editorial,
+.look-btn,
+.chapter-tab,
+.editorial-filter-btn,
+.session-pill,
+.editorial-form__field input,
+.editorial-form__field select,
+.editorial-form__field textarea,
+.lightbox__close,
+.skip-link {
+  border-radius: 0.5rem;
+}
+
 @media (max-width: 820px) {
   .page-hero__inner,
   .services-cards-grid,
