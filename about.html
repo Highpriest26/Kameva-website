@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kameva - Photography</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: PhotoFolio
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body class="about-page">
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <i class="bi bi-camera"></i>
+        <h1 class="sitename">Kameva<span class="name">Photography</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Home<br></a></li>
+          <li><a href="about.html" class="active">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+
+    </div>
+  </header>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Barlow:wght@200;300;400;500&display=swap');
+  ul{
+      list-style: none;
+  }
+
+  :root {
+    --accent: #27a776;
+    --accent-dim: rgba(39, 167, 118, 0.12);
+    --accent-border: rgba(39, 167, 118, 0.3);
+  }
+
+  /* ── Page Banner ── */
+  .page-title {
+    background: #1a1a18;
+    padding: 5rem 2rem 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-title::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(39,167,118,0.08) 0%, transparent 70%);
+  }
+  .page-title .heading .container { position: relative; z-index: 1; }
+  .page-title .eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-family: 'Barlow', sans-serif;
+  }
+  .page-title h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+  .page-title .tagline {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.7;
+    max-width: 520px;
+    margin-bottom: 2rem;
+  }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    padding: 0.75rem 1.6rem;
+    transition: all 0.3s ease;
+  }
+  .cta-btn:hover { background: transparent; color: var(--accent); }
+
+  /* ── Breadcrumbs ── */
+  .breadcrumbs {
+    background: #111;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #222;
+  }
+  .breadcrumbs ol {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    list-style: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+  }
+  .breadcrumbs a { color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.2s; }
+  .breadcrumbs a:hover { color: var(--accent); }
+  .breadcrumbs li::after { content: '/'; margin-left: 0.5rem; color: rgba(255,255,255,0.15); }
+  .breadcrumbs li:last-child::after { display: none; }
+  .breadcrumbs .current { color: var(--accent); }
+
+  /* ── About Section ── */
+  .about .row { align-items: start; }
+
+  .photo-frame {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  .photo-frame img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(15%);
+  }
+  .photo-accent {
+    position: absolute;
+    bottom: -1.2rem;
+    right: -1.2rem;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border: 1px solid var(--accent-border);
+    z-index: -1;
+  }
+  .photo-label {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    background: var(--accent);
+    padding: 0.5rem 1rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+  }
+
+  .content .section-label {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    color: #1a1a18;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+  }
+  .content .intro {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    border-left: 2px solid var(--accent);
+    padding-left: 1rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #e5e3de;
+    margin-bottom: 2rem;
+  }
+  .info-item {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid #e5e3de;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.82rem;
+  }
+  .info-item:nth-child(odd) { border-right: 1px solid #e5e3de; }
+  .info-item:last-child,
+  .info-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+  .info-item strong {
+    color: var(--accent);
+    font-weight: 500;
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.15rem;
+  }
+  .info-item span { color: #333; font-weight: 300; }
+
+  .bio-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+  .divider-line {
+    width: 40px;
+    height: 1px;
+    background: var(--accent);
+    margin: 1.5rem 0;
+  }
+</style>
+
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title" data-aos="fade">
+    <div class="heading">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <p class="eyebrow">Photographer &amp; Visual Artist</p>
+            <h1>About<br>Kameva photograhy</h1>
+            <p class="tagline">Capturing the quiet moments, the raw emotion, and the beauty that lives between frames. Based in Lagos, available worldwide.</p>
+            <a href="contact.html" class="cta-btn">Available for Hire →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li class="current">About</li>
+        </ol>
+      </div>
+    </nav>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about section py-5">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 justify-content-center">
+
+        <div class="col-lg-4">
+          <div class="photo-frame">
+            <img src="assets/img/kama/k-33.PNG" alt="Roselyn Abaa-Offor">
+            <div class="photo-accent"></div>
+            <div class="photo-label">Portrait · Fashion · Maternity</div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 content">
+          <span class="section-label">The Person Behind the Lens</span>
+          <h2>Professional Photographer<br>based in Lagos, Nigeria</h2>
+          <p class="intro">
+            I believe every person carries a story worth telling. My work is about creating a space where you feel seen — and then freezing that moment in time.
+          </p>
+
+          <div class="info-grid">
+            <div class="info-item"><strong>Name</strong><span>Roselyn Abaa-Offor</span></div>
+            <div class="info-item"><strong>Based in</strong><span>Lagos, Nigeria</span></div>
+            <div class="info-item"><strong>Phone</strong><span>08161654981</span></div>
+            <div class="info-item"><strong>Email</strong><span>kamevaphotography@gmail.com</span></div>
+            <div class="info-item"><strong>Specialties</strong><span>Portraits · Maternity .Weddings .Birthdays </span></div>
+            <div class="info-item"><strong>Availability</strong><span>Open for bookings</span></div>
+          </div>
+
+          <p class="bio-text">
+Roselyn Abaa-Offor is a passionate photographer and visual storyteller dedicated to capturing moments with depth, emotion, and authenticity. Her work is rooted in the belief that every image should tell a story—one that feels real, timeless, and deeply human.
+
+With a strong background in leadership and organization, Roselyn brings a unique blend of structure and creativity to her photography. She approaches every shoot with intention, paying close attention to detail, lighting, and composition to create images that are both visually striking and emotionally compelling.
+
+Whether documenting intimate portraits, dynamic events, or lifestyle moments, Roselyn is known for creating a comfortable space that allows her subjects to be themselves—resulting in natural, powerful imagery that resonates.
+
+Driven by a desire to continuously evolve, she is committed to refining her craft and delivering work that not only meets expectations but leaves a lasting impression.
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<style>
+  :root {
+    --accent: #27a776;
+    --accent-border: rgba(39, 167, 118, 0.3);
+  }
+
+  .footer {
+    background: #1a1a18;
+    padding: 3.5rem 2rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(39,167,118,0.3), transparent);
+  }
+
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-brand .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #fff;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .footer-brand .tagline {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+   color: #fff;    font-weight: 300;
+    font-family: 'Barlow', sans-serif;
+  }
+
+  .footer-divider {
+    width: 1px;
+    height: 60px;
+    background: rgba(255,255,255,0.1);
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+  .footer-links a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+   color: #fff;    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.25s;
+  }
+  .footer-links a:hover { color: var(--accent); }
+
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .footer-copy {
+    font-size: 0.7rem;
+   color: #fff;
+       font-weight: 300;
+    font-family: 'Barlow', sans-serif;
+  }
+  .footer-copy a { color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.2s; }
+  .footer-copy a:hover { color: var(--accent); }
+
+  .footer .social-links { display: flex; gap: 0.6rem; }
+  .footer .social-links a {
+    width: 34px; height: 34px;
+    border: 1px solid rgba(255,255,255,0.12);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.25s;
+    font-size: 0.9rem;
+  }
+  .footer .social-links a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  @media (max-width: 600px) {
+    .footer-inner { grid-template-columns: 1fr; text-align: center; }
+    .footer-divider { display: none; }
+    .footer-links { align-items: center; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  }
+</style>
+
+<footer id="footer" class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="name">Kameva photography</span>
+      <span class="tagline">Portrait · Maternity · Fashion · Family</span>
+    </div>
+    <div class="footer-divider"></div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">
+      © 2025 Roselyn Abaa-Offor. All rights reserved.
+      Designed by <a href="#">Kameva</a>.
+    </p>
+    <div class="social-links">
+      <a href="" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
